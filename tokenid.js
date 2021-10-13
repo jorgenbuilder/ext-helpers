@@ -1,4 +1,4 @@
-const { Principal } = require('@dfinity/principal');
+import { Principal } from '@dfinity/principal';
 
 const tokenIdentifier = (principal, index) => {
     const padding = Buffer.from("\x0Atid");
