@@ -105,7 +105,7 @@ const to32bits = num => {
     return Array.from(new Uint8Array(b));
 }
 
-console.log(principalToAccountIdentifier(process.argv[2], 0));
+console.log(principalToAccountIdentifier(process.argv[2], process.argv[3] || 0));
 
 export function getCrc32(buf) {
     const b = new Uint8Array(buf);
